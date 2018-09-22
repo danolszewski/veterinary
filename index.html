@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="PL">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="card_section.css">
+    <link rel="stylesheet" href="section.css">
+    <link rel="stylesheet" href="footer.css">
+    <link href="https://fonts.googleapis.com/css?family=Junge|Padauk" rel="stylesheet">
+    <title></title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar">
+            <div class="navbar-branding">
+                <img src="images/veterinary2.png" width="150px" height="80px">
+            </div>
+            <ul class="navbar-list">
+                <li>
+                    <a href="#o-nas">
+          About Us
+        </a>
+                </li>
+                <li>
+                    <a href="#oferta">
+          Tips
+        </a>
+                </li>
+                <li>
+                    <a href="#produkty">
+          Gallery
+        </a>
+                </li>
+                <li>
+                    <a href="#kontakt">
+          Contact
+        </a>
+                </li>
+            </ul>
+        </nav>
+
+        </nav>
+
+        <header>
+            <div id="header">
+                <img src="images/cat.jpg" alt="splash" />
+            </div>
+
+        </header>
+
+        <section class="card-section">
+            <div class="card card-1">
+                <div id="plate-1">
+                    <img src="images/pawprint.png" alt="" width="100px" height="100px">
+                </div>
+                <p><b>
+        About Us
+      </b></p>
+            </div>
+            <div class="card card-2">
+                <div id="plate-2">
+                    <img src="images/plain.png" alt="" width="100px" height="100px">
+                </div>
+                <p><b>
+        Tips
+      </b></p>
+            </div>
+            <div class="card card-3">
+                <div id="plate-3">
+                    <img src="images/photo-camera.png" alt="" width="100px" height="100px">
+                </div>
+                <p><b>
+        Gallery
+      </b></p>
+            </div>
+
+        </section>
+        <section>
+            <div id="team">
+                <p id="vet">Our Vet</p>
+            </div>
+            <div id=foto-team>
+                <div id="foto-1">
+                    <img src="images/vet-for-dogs.jpg" alt="vet_man" width="220px" height="220px">
+                    <p><b>Vet</b>| Maciej Boss</p>
+                </div>
+                <div id="foto-2">
+                    <img src="images/img-vet-supplies.jpg" alt="vet_woman" width="220px" height="220px">
+                    <p><b>Vet</b>| Jola Graph</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="page-footer">
+            <section class="about-company">
+                <h3>
+                    About Company
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, fugiat quisquam?
+                </p>
+                <nav class="social-media">
+                    <a href="#facebook">
+          <img src="images/facebook.png" alt="Facebook" width="25px" height="25px">
+        </a>
+                    <a href="#twitter">
+          <img src="images/twitter.png" alt="Twitter" width="25px" height="25px">
+        </a>
+                    <a href="#instagram">
+          <img src="images/instagram.png" alt="Instagram" width="25px" height="25px">
+        </a>
+                </nav>
+            </section>
+            <nav class="footer-list">
+                <h3>
+                    Menu
+                </h3>
+                <ul class="footer-wrapper">
+                    <li class="footer-item">
+                        <a href="#o-nas">
+            About Us
+          </a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#oferta">
+            Tips
+          </a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#produkty">
+            Gallery
+          </a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#blog">
+            Contact
+          </a>
+                    </li>
+                </ul>
+            </nav>
+            <address class="footer-list">
+      <h3>
+        Address
+      </h3>
+      <div class="footer-wrapper">
+        <span class="footer-item">
+          Veterinary
+        </span>
+        <span class="footer-item">
+          Catdog Street 87
+        </span>
+        <span class="footer-item">
+          56876 Ohio
+        </span>
+      </div>
+    </address>
+            <section class="footer-list">
+                <h3>
+                    Contact
+                </h3>
+                <div class="footer-wrapper">
+                    <span class="footer-item">
+          Telephone: 12 345 678 900
+        </span>
+                    <span class="footer-item">
+          E-mail: office@veterinary.com
+        </span>
+                </div>
+            </section>
+
+        </footer>
+
+    </div>
+
+</body>
+<script src="jquery-3.3.1.min.js"></script>
+<script>
+    $(document).ready(function() {
+        var NavY = $('.navbar').offset().top;
+
+        var stickyNav = function() {
+            var ScrollY = $(window).scrollTop();
+
+            if (ScrollY > NavY) {
+                $('.navbar').addClass('sticky');
+            } else {
+                $('.navbar').removeClass('sticky');
+            }
+        };
+
+        stickyNav();
+
+        $(window).scroll(function() {
+            stickyNav();
+        });
+    });
+
+</script>
+</body>
+
+</html>

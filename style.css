@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+#wrapper {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+#header {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 20px;
+    background-color: #EDF8E7
+}
+
+header img {
+    width: 100%;
+    display: block;
+}

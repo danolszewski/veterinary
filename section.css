@@ -1,0 +1,46 @@
+#foto-1,
+#foto-2 {
+    display: inline-block;
+    text-align: center;
+    font-size: 23px;
+    font-family: Padauk;
+    color: #A3966B;
+    padding-bottom: 50px;
+}
+
+#foto-1 p,
+#foto-2 p {
+    padding-top: 10px;
+}
+
+#foto-1 {
+    padding-right: 10px;
+}
+
+#foto-2 {
+    padding-left: 10px;
+}
+
+#foto-team {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+
+}
+
+#team {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 20%;
+}
+
+#vet {
+    border-bottom: 1px solid #A3966B;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    font-size: 36px;
+    color: #A3966B;
+
+}
